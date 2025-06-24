@@ -16,5 +16,3 @@ Ezify Blogs is a sleek and responsive frontend blogging platform built using **R
 - CSS / Tailwind CSS
 - JavaScript
 - Netlify (for deployment)
-
-## 📂 Folder Structure
