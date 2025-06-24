@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EzBlogs | Blogs-Updates</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<!-- Navbar -->
+<header class="navbar">
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="#testimonial">Testimonial</a>
+    <a href="#service">Service</a>
+  </nav>
+</header>
+
+
+<section class="hero-section">
+  <img class="brand-logo" src="/assets/logo2.png" alt="Logo">
+  <h1 class="brand-heading">Ezify</h1>
+</section>
+<div class="topbar">
+  <input type="text" id="searchBar" placeholder="Search blog posts" class="search-bar" />
+  <button id="themeToggle" class="toggle-btn">
+    <img src="/assets/toggle-off.png" alt="Light theme" class="theme-icon" id="themeIcon">
+  </button>
+ </div>
+
+ <!-- Get started -->
+<section id="subscribe" class="subscribe-section">
+  <h2>Subscribe for Updates</h2>
+  <p>Get fresh blog insights delivered to your inbox.</p>
+  <form id="subscribeForm" class="subscribe-form">
+    <input type="email" id="subscriberEmail" placeholder="Enter your email" required />
+    <button type="submit">Subscribe</button>
+  </form>
+  <p class="subscribe-message" id="subscribeMessage"></p>
+</section>
+
+
+<!-- Home Section -->
+<div class="home-section">
+  <h1 class="home-heading">Discover our latest news</h1>
+</div>
+<div class="home-para"><p>This blog is a curated space for tech, design, and development insights — crafted to inform, inspire, and spark new ideas.</p>
+<a href="#blog" class="get-started-btn1">Get Started</a>
+</div>
+
+  <section class="blog-grid" id="blog">
+
+    <!-- Post 1 -->
+    <div class="blog-card" data-title="Having some rest hours">
+      <div class="author-info">
+        <img src="assets/rohit.jpg" alt="Rohit Adhikari" class="author-pic" />
+        <span class="author-name">
+          Rohit Adhikari
+          <img src="assets/tick.png" alt="Verified" class="verified-icon" />
+        </span>
+      </div>
+      <img src="assets/blogpost1.jpg" alt="Blog Cover" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">Having some rest hours</h3>
+        <p class="blog-excerpt">Although the journey remains active...</p>
+        <div class="blog-stats">
+          <button class="icon-button" onclick="likePost(this)"><img src="assets/heart.png" alt="Like" class="icon-img" /><span class="count" data-raw="436000">436K</span></button>
+          <button class="icon-button" onclick="viewPost(this)"><img src="assets/eye.png" alt="View" class="icon-img" /><span class="count" data-raw="1300000">1.3M</span></button>
+          <button class="icon-button" onclick="sharePost(this)"><img src="assets/send.png" alt="Share" class="icon-img" /><span class="count" data-raw="42000">42K</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="blog-card" data-title="Web Dev Journey">
+      <div class="author-info">
+        <img src="assets/rohit.jpg" alt="Web Dev" class="author-pic" />
+        <span class="author-name">
+          Rohit Adhikari
+          <img src="assets/tick.png" alt="Verified" class="verified-icon" />
+        </span>
+      </div>
+      <img src="assets/hcj.jpg" alt="Blog Cover" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">Web Dev Journey</h3>
+        <p class="blog-excerpt">Exploring HTML, CSS, and JavaScript from scratch.</p>
+        <div class="blog-stats">
+          <button class="icon-button" onclick="likePost(this)"><img src="assets/heart.png" alt="Like" class="icon-img" /><span class="count" data-raw="550000">550K</span></button>
+          <button class="icon-button" onclick="viewPost(this)"><img src="assets/eye.png" alt="View" class="icon-img" /><span class="count" data-raw="2200000">2.2M</span></button>
+          <button class="icon-button" onclick="sharePost(this)"><img src="assets/send.png" alt="Share" class="icon-img" /><span class="count" data-raw="120000">120K</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="blog-card" data-title="My Daily Coding Habits">
+      <div class="author-info">
+        <img src="assets/rohit.jpg" alt="Rohit Adhikari" class="author-pic" />
+        <span class="author-name">
+          Rohit Adhikari
+          <img src="assets/tick.png" alt="Verified" class="verified-icon" />
+        </span>
+      </div>
+      <img src="assets/goku2.jpg" alt="Blog Cover" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">My Daily Coding Habits</h3>
+        <p class="blog-excerpt">How I stay consistent with code every day.</p>
+        <div class="blog-stats">
+          <button class="icon-button" onclick="likePost(this)"><img src="assets/heart.png" alt="Like" class="icon-img" /><span class="count" data-raw="88000">88K</span></button>
+          <button class="icon-button" onclick="viewPost(this)"><img src="assets/eye.png" alt="View" class="icon-img" /><span class="count" data-raw="950000">950K</span></button>
+          <button class="icon-button" onclick="sharePost(this)"><img src="assets/send.png" alt="Share" class="icon-img" /><span class="count" data-raw="31000">31K</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 4 -->
+    <div class="blog-card" data-title="Introduction to MERN Stack">
+      <div class="author-info">
+        <img src="assets/rohit.jpg" alt="MERN Stack" class="author-pic" />
+        <span class="author-name">
+          Rohit Adhikari
+          <img src="assets/tick.png" alt="Verified" class="verified-icon" />
+        </span>
+      </div>
+      <img src="assets/blogpost2.png" alt="Blog Cover" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">Introduction to MERN Stack</h3>
+        <p class="blog-excerpt">MongoDB, Express, React, Node — full stack power!</p>
+        <div class="blog-stats">
+          <button class="icon-button" onclick="likePost(this)"><img src="assets/heart.png" alt="Like" class="icon-img" /><span class="count" data-raw="670000">670K</span></button>
+          <button class="icon-button" onclick="viewPost(this)"><img src="assets/eye.png" alt="View" class="icon-img" /><span class="count" data-raw="1900000">1.9M</span></button>
+          <button class="icon-button" onclick="sharePost(this)"><img src="assets/send.png" alt="Share" class="icon-img" /><span class="count" data-raw="87000">87K</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 5 -->
+    <div class="blog-card" data-title="Freelancing as a Developer">
+      <div class="author-info">
+        <img src="assets/rohit.jpg" alt="Rohit Adhikari" class="author-pic" />
+        <span class="author-name">
+          Rohit Adhikari
+          <img src="assets/tick.png" alt="Verified" class="verified-icon" />
+        </span>
+      </div>
+      <img src="assets/freelance2.png" alt="Blog Cover" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">Freelancing as a Developer</h3>
+        <p class="blog-excerpt">How I manage clients and projects independently.</p>
+        <div class="blog-stats">
+          <button class="icon-button" onclick="likePost(this)"><img src="assets/heart.png" alt="Like" class="icon-img" /><span class="count" data-raw="234000">234K</span></button>
+          <button class="icon-button" onclick="viewPost(this)"><img src="assets/eye.png" alt="View" class="icon-img" /><span class="count" data-raw="870000">870K</span></button>
+          <button class="icon-button" onclick="sharePost(this)"><img src="assets/send.png" alt="Share" class="icon-img" /><span class="count" data-raw="32000">32K</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 6 -->
+    <div class="blog-card" data-title="Advanced MERN Stack Tips">
+      <div class="author-info">
+        <img src="assets/rohit.jpg" alt="MERN Pro" class="author-pic" />
+        <span class="author-name">
+          Rohit Adhikari
+          <img src="assets/tick.png" alt="Verified" class="verified-icon" />
+        </span>
+      </div>
+      <img src="assets/mern adv.png" alt="Blog Cover" class="blog-image" />
+      <div class="blog-content">
+        <h3 class="blog-title">Advanced MERN Stack Tips</h3>
+        <p class="blog-excerpt">Handle auth, APIs and deployment like a pro.</p>
+        <div class="blog-stats">
+          <button class="icon-button" onclick="likePost(this)"><img src="assets/heart.png" alt="Like" class="icon-img" /><span class="count" data-raw="768000">768K</span></button>
+          <button class="icon-button" onclick="viewPost(this)"><img src="assets/eye.png" alt="View" class="icon-img" /><span class="count" data-raw="2400000">2.4M</span></button>
+          <button class="icon-button" onclick="sharePost(this)"><img src="assets/send.png" alt="Share" class="icon-img" /><span class="count" data-raw="158000">158K</span></button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+<div id="toast" class="toast">Link copied!</div>
+
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonial">
+  <h2 class="section-title">What People Say</h2>
+
+  <div class="testimonial-grid">
+
+    <div class="testimonial-card">
+      <p>"Rohit built my entire portfolio site from scratch—responsive, blazing fast, and pixel-perfect!"</p>
+      <span class="author">– Priya Singh</span>
+    </div>
+    
+    <div class="testimonial-card">
+      <p>"He redesigned our startup's blog section and boosted our organic traffic by 40%!"</p>
+      <span class="author">– Arjun Mehta</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"Super clean code and a beautiful UI—his MERN stack skills are top-notch."</p>
+      <span class="author">– Sneha Reddy</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"Working with Rohit was seamless—he delivered the web app ahead of deadline."</p>
+      <span class="author">– Aman Yadav</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"We hired him for a product landing page. He nailed the animations and branding!"</p>
+      <span class="author">– Reema Kapoor</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"As a non-tech founder, Rohit explained everything clearly and built an amazing blog platform for us."</p>
+      <span class="author">– Deepak Rao</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"He optimized our existing site and improved load speed by 65%. Highly skilled in performance tuning."</p>
+      <span class="author">– Nisha Kumari</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"Reliable and creative—Rohit handled both front-end and backend of our CMS project."</p>
+      <span class="author">– Rahul Dev</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"His blog writing is crisp, SEO-friendly, and always on-brand. A multi-talented dev + writer."</p>
+      <span class="author">– Tanya Joshi</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"Loved the glassmorphism design and smooth interactions on our dashboard UI!"</p>
+      <span class="author">– Karan Malhotra</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"We’ve worked with many devs, but Rohit is the most detail-oriented and responsive."</p>
+      <span class="author">– Snehal Pathak</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"He brought our vision to life in a fully dynamic blog system with admin panel. Brilliant work."</p>
+      <span class="author">– Ankit Rawal</span>
+    </div>
+
+  </div> <!-- End testimonial-grid -->
+
+</section>
+
+
+<!-- Services Section -->
+<section class="services-section" id="service">
+  <h2 class="section-heading">Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Frontend Development</h3>
+      <p>I craft responsive, pixel-perfect websites using HTML, CSS, and JavaScript. Whether it's a landing page or a complete UI, I ensure smooth UX across all devices.</p>
+      <ul class="service-points">
+        <li>Responsive Design</li>
+        <li>Pixel Perfect UI</li>
+        <li>SEO Optimization</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3>React.js Applications</h3>
+      <p>From dynamic SPAs to complex dashboards, I build high-performance React apps with reusable components, hooks, state management, and routing best practices.</p>
+      <ul class="service-points">
+        <li>Component-Based Architecture</li>
+        <li>Hooks & State Management</li>
+        <li>SPA & Dynamic Routing (React Router)</li>
+        <li>Optimized Performance with Memoization</li>
+        <li>Reusable UI Components</li>
+      </ul>
+
+    </div>
+    <div class="service-card">
+      <h3>Backend & APIs (Node.js + Express)</h3>
+      <p>I design and build scalable REST APIs, handle authentication, and manage server-side logic using Node.js and Express, ensuring speed and security.</p>
+      <ul class="service-points">
+        <li>Node.js & Express.js Applications</li>
+        <li>RESTful API Integration</li>
+        <li>Database Handling (MongoDB, SQL)</li>
+        <li>Authentication & Middleware</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3>MERN Stack Development</h3>
+      <p>I create full-stack web applications using MongoDB, Express, React, and Node. From concept to deployment, I manage the entire flow of modern web apps.</p>
+        <ul class="service-points">
+          <li>End-to-End Web App Architecture</li>
+          <li>Frontend + Backend Integration</li>
+          <li>JWT Authentication & Protected Routes</li>
+          <li>Deployment on Vercel/Render</li>
+        </ul>
+
+    </div>
+    <div class="service-card">
+      <h3>Website Optimization</h3>
+      <p>Slow site? I optimize load times, fix performance bottlenecks, and improve Lighthouse scores to enhance both user experience and SEO rankings.</p>
+      <ul class="service-points">
+        <li>Lazy Loading & Code Splitting</li>
+        <li>Minimized Bundle Sizes</li>
+        <li>Core Web Vitals Optimization</li>
+        <li>SEO & Lighthouse Score Boost</li>
+      </ul>
+
+    </div>
+    <div class="service-card">
+      <h3>UI/UX Design</h3>
+      <p>I craft intuitive, user-focused interfaces that not only look beautiful but also deliver seamless and meaningful experiences. From wireframes to final product design.</p>
+      <ul class="service-points">
+        <li>User-Centered Design Process</li>
+        <li>Wireframes & Prototypes in Figma</li>
+        <li>Clean, Intuitive Interfaces</li>
+        <li>Dark Mode / Accessibility Focus</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <div class="contact-card" id="contact">
+    <h2 class="contact-heading">Get in Touch</h2>
+    <form class="contact-form" id="contact-form">
+      <input type="text" name="user_name" placeholder="Your Name" required />
+      <input type="email" name="user_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5"  required maxlength="2000" required></textarea>
+      <button type="submit">Send</button>
+      <p id="form-status" class="status-message"></p>
+    </form>
+  </div>
+</section>
+
+<!-- Floating Chat Bot -->
+ <div class="chatbot-container" id="chatbotContainer">
+  <div class="chat-header">EZ ChatBot 🤖</div>
+  <div class="chat-body" id="chatBody">
+    <div class="bot-msg">Hi! Ask me something like "Who developed this site?"</div>
+  </div>
+  <div class="chat-input-area">
+    <input type="text" id="chatInput" placeholder="Type your question..." />
+    <button onclick="handleChat()">Send</button>
+  </div>
+</div>
+
+<!-- Floating Button -->
+<button class="chat-toggle" onclick="toggleChat()">💬</button>
+
+
+<!-- Footer, Social Links -->
+<footer class="site-footer">
+  <div class="social-links">
+    <a href="https://www.instagram.com/ez_.rohit" target="_blank" aria-label="Instagram">
+      <img src="assets/instagram.svg" alt="Instagram" />
+    </a>
+    <a href="https://www.instagram.com/ez_.rohit" target="_blank" aria-label="Twitter">
+      <img src="assets/twitter.svg" alt="Twitter" />
+    </a>
+    <a href="https://github.com/Rohitdevatpy" target="_blank" aria-label="GitHub">
+      <img src="assets/github.svg" alt="GitHub" />
+    </a>
+  </div>
+  <p class="copyright">
+    &copy; 2025 <span class="footer-name">Rohit Adhikari</span>. All rights reserved.
+  </p>
+</footer>
+
+</body>
+<script>
+  function formatCount(n) {
+    if (n >= 1_000_000) return (n / 1_000_000).toFixed(1).replace(".0", "") + "M";
+    if (n >= 1_000) return (n / 1_000).toFixed(1).replace(".0", "") + "K";
+    return n;
+  }
+
+  function likePost(btn) {
+    btn.classList.add("clicked");
+    setTimeout(() => btn.classList.remove("clicked"), 300);
+    const countSpan = btn.querySelector(".count");
+    const icon = btn.querySelector("img");
+    const raw = parseInt(countSpan.dataset.raw || "436000");
+    const liked = btn.classList.toggle("liked");
+    btn.classList.add("clicked")
+    setTimeout(() => btn.classList.remove("clicked"), 300);
+    const updatedCount = liked ? raw + 1 : raw - 1;
+    countSpan.dataset.raw = updatedCount;
+    countSpan.innerText = formatCount(updatedCount);
+
+    icon.src = liked ? "/assets/heartred.png" : "/assets/heart.png";
+  }
+
+  function viewPost(btn) {
+    btn.classList.add("clicked");
+    setTimeout(() => btn.classList.remove("clicked"), 300);
+    const countSpan = btn.querySelector(".count");
+    const raw = parseInt(countSpan.dataset.raw || "1300000");
+    const updatedCount = raw + 1;
+    countSpan.dataset.raw = updatedCount;
+    countSpan.innerText = formatCount(updatedCount);
+  }
+
+  function sharePost(btn) {
+    btn.classList.add("clicked");
+    setTimeout(() => btn.classList.remove("clicked"), 300);
+    const countSpan = btn.querySelector(".count");
+    const raw = parseInt(countSpan.dataset.raw || "42000");
+    const updatedCount = raw + 1;
+    countSpan.dataset.raw = updatedCount;
+    countSpan.innerText = formatCount(updatedCount);
+    const blogTitle = btn.closest(".blog-card").dataset.title.replace(/\s+/g, '-').toLowerCase();
+  const dummyLink = `${location.origin}/blog/${blogTitle}`;
+  navigator.clipboard.writeText(dummyLink).then(() => showToast("Link copied!"));
+}
+
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.innerText = message;
+  toast.classList.add("show");
+  setTimeout(() => toast.classList.remove("show"), 2000);
+  }
+
+  function parseCount(val) {
+    if (val.includes("M")) return parseFloat(val) * 1_000_000;
+    if (val.includes("K")) return parseFloat(val) * 1_000;
+    return parseInt(val);
+  }
+
+  // Search Bar Filter
+  const searchInput = document.getElementById("searchBar");
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    document.querySelectorAll(".blog-card").forEach(card => {
+      const title = card.dataset.title.toLowerCase();
+      card.style.display = title.includes(query) ? "block" : "none";
+    });
+  });
+
+  // Theme Toggle
+  const themeBtn = document.getElementById("themeToggle");
+  const themeIcon = document.getElementById("themeIcon")
+  themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    const isDark = document.body.classList.contains("dark");
+
+    themeIcon.src = isDark ? "/assets/toggle-on.png" : "/assets/toggle-off.png"
+  });
+</script>
+
+
+<!-- Subscribe Function -->
+<script>
+  document.getElementById("subscribeForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const email = document.getElementById("subscriberEmail").value;
+    const msg = document.getElementById("subscribeMessage");
+
+    if (email.includes("@") && email.includes(".")) {
+      msg.textContent = "✅ You’ve successfully subscribed!";
+      msg.style.color = "green";
+      this.reset();
+    } else {
+      msg.textContent = "❌ Please enter a valid email address.";
+      msg.style.color = "red";
+    }
+  });
+</script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS
+  (function() {
+    emailjs.init("3Ak-Y94vEAgPROqBc"); // Your public key
+  })();
+
+  // Handle form submission
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent page refresh
+
+    const form = this;
+    const status = document.getElementById("form-status");
+
+    emailjs.sendForm("service_kqxlp48", "template_8xpapaw", form)
+      .then(() => {
+        status.innerHTML = "✅ Message sent successfully!";
+        status.style.color = "green";
+        form.reset();
+      })
+      .catch((error) => {
+        status.innerHTML = "❌ Failed to send message. Please try again.";
+        status.style.color = "red";
+        console.error("EmailJS error:", error);
+      });
+  });
+</script>
+<script>
+function toggleChat() {
+  const chatbot = document.getElementById("chatbotContainer");
+  chatbot.style.display = chatbot.style.display === "flex" ? "none" : "flex";
+}
+
+function handleChat() {
+  const input = document.getElementById("chatInput");
+  const chatBody = document.getElementById("chatBody");
+  const userMessage = input.value.trim();
+
+  if (!userMessage) return;
+
+  // Append user message
+  chatBody.innerHTML += `<div class="user-msg"><strong>You:</strong> ${userMessage}</div>`;
+
+  const msg = userMessage.toLowerCase();
+  let response = "Hmm... I'm not sure how to respond to that. Try asking about Rohit or this website!";
+
+  // 🔹 Smart keyword-based responses
+  if (msg.includes("who developed") || msg.includes("creator") || msg.includes("developer")) {
+    response = "This site was developed by Rohit Adhikari — a skilled full-stack developer with a passion for clean UI and powerful web experiences.";
+  } 
+  else if (msg.includes("rohit") || msg.includes("your name")) {
+    response = "Rohit Adhikari is the creator of EzBlogs. He specializes in React, UI/UX, and high-performance frontend development.";
+  } 
+  else if (msg.includes("connect") || msg.includes("contact") || msg.includes("reach")) {
+    response = "You can connect with Rohit via the Contact section or through social links at the bottom of the page.";
+  } 
+  else if (msg.includes("skills") || msg.includes("what can you do")) {
+    response = "Rohit is skilled in React.js, UI/UX design, web animation, performance optimization, and blog/portfolio site building.";
+  } 
+  else if (msg.includes("latest blog") || msg.includes("new blog") || msg.includes("update")) {
+    response = "You can find the latest blog posts right on the homepage. Scroll down to check them out!";
+  } 
+  else if (msg.includes("about site") || msg.includes("this website")) {
+    response = "This site is a personal blog platform called EzBlogs, built from scratch to deliver clean UI, dark mode, and responsive design.";
+  } 
+  else if (msg.includes("subscribe") || msg.includes("newsletter")) {
+    response = "You can subscribe using the 'Join Us' section to receive the latest updates right in your inbox!";
+  }
+  else if (msg.includes("source code") || msg.includes("open-source") || msg.includes("github")) {
+    response = "The site is custom-developed by Rohit. It may be open-sourced soon — stay tuned!";
+  } 
+  else if (msg.includes("services")) {
+    response = "Rohit offers UI/UX design, ReactJS app development, web optimization, and full-stack web solutions.";
+  } 
+  else if (msg.includes("testimonials") || msg.includes("clients")) {
+    response = "Don't just take our word — scroll down to read real testimonials from people who’ve worked with Rohit!";
+  } 
+  else if (msg.includes("thanks") || msg.includes("thank you")) {
+    response = "You're welcome! I'm here to help 😊";
+  } 
+  else if (msg.includes("hi") || msg.includes("hello")) {
+    response = "Hey there! Ask me anything about the developer or this website.";
+  }
+
+  // Append bot reply
+  chatBody.innerHTML += `<div class="bot-msg"><strong>Bot:</strong> ${response}</div>`;
+  input.value = "";
+
+  // Scroll to bottom
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+</script>
+
+
+</html>
